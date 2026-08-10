@@ -211,16 +211,20 @@
 
   /* Bottom sheet */
   .sheet-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(26, 22, 18, 0.45);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    z-index: 80;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  .sheet-overlay.visible { opacity: 1; }
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 22, 18, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 80;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+  .sheet-overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
   .sheet {
     position: fixed;
     bottom: 0;
