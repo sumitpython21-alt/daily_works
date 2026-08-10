@@ -493,7 +493,76 @@
   <div class="phone-frame">
     <!-- Header -->
         <!-- Header -->
-    <header class="app-header">
+    <!-- Header -->
+<header class="app-header">
+  <div>
+    <p class="text-[11px] uppercase tracking-[0.15em] text-[color:var(--ink-soft)] font-medium" id="greeting">
+      Good morning
+    </p>
+
+    <h1 class="serif text-[34px] leading-[1.05] mt-1.5" id="dateHeading">
+      Today
+    </h1>
+
+    <!-- 3D Name -->
+    <div class="mt-2.5">
+      <p
+        class="text-[8px] uppercase tracking-[0.28em] font-semibold text-[color:var(--ink-faint)] mb-0.5"
+      >
+        by
+      </p>
+
+      <p
+        class="text-[15px] font-black tracking-[0.08em] uppercase
+               bg-gradient-to-r from-indigo-500 via-purple-500 to-fuchsia-500
+               bg-clip-text text-transparent"
+        style="
+          text-shadow:
+            1px 1px 0 rgba(167, 139, 250, 0.65),
+            2px 2px 0 rgba(139, 92, 246, 0.45),
+            3px 3px 0 rgba(109, 40, 217, 0.30),
+            4px 5px 7px rgba(0, 0, 0, 0.20);
+        "
+      >
+        Sumit Pareta
+      </p>
+    </div>
+  </div>
+
+  <div class="relative flex-shrink-0">
+    <svg width="64" height="64" viewBox="0 0 64 64">
+      <circle
+        class="ring-bg"
+        cx="32"
+        cy="32"
+        r="27"
+        fill="none"
+        stroke-width="4"
+      />
+
+      <circle
+        id="progressRing"
+        class="ring-fill"
+        cx="32"
+        cy="32"
+        r="27"
+        fill="none"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-dasharray="169.65"
+        stroke-dashoffset="169.65"
+        transform="rotate(-90 32 32)"
+      />
+    </svg>
+
+    <div class="absolute inset-0 flex flex-col items-center justify-center">
+      <span class="text-[13px] font-bold mono-num" id="progressText">
+        0%
+      </span>
+    </div>
+  </div>
+</header>
+    <!-- <header class="app-header">
       <div>
         <p class="text-[11px] uppercase tracking-[0.15em] text-[color:var(--ink-soft)] font-medium" id="greeting">Good morning</p>
         <h1 class="serif text-[34px] leading-[1.05] mt-1.5" id="dateHeading">Today</h1>
@@ -510,7 +579,7 @@
           <span class="text-[13px] font-bold mono-num" id="progressText">0%</span>
         </div>
       </div>
-    </header>
+    </header> -->
     <!-- Main content -->
     <main class="scroll-area">
       <!-- Habits tab -->
